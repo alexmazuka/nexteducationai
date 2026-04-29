@@ -3,8 +3,7 @@ import { dirname } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-// TODO: set to '' once DNS migration is complete and site is served at apex of nexteducationai.org.
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/nexteducationai';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
